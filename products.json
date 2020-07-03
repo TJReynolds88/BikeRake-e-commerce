@@ -5,7 +5,7 @@
         "fields": {
           "title": "Kona Hei Hei",
           "price": 1899.99,
-          "image": { "fields": { "file": { "url": "./images/product-1.jpeg" } } }
+          "image": { "fields": { "file": { "url": "images/product-1.jpg" } } }
         }
       },
       {
@@ -13,7 +13,7 @@
         "fields": {
           "title": "Kona Big Honzo",
           "price": 2399.99,
-          "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+          "image": { "fields": { "file": { "url": "./images/product-2.jpg" } } }
         }
       },
       {
@@ -21,7 +21,7 @@
         "fields": {
           "title": "Kona WO",
           "price": 1499.99,
-          "image": { "fields": { "file": { "url": "./images/product-3.jpeg" } } }
+          "image": { "fields": { "file": { "url": "./images/product-3.jpg" } } }
         }
       },
       {
@@ -29,7 +29,7 @@
         "fields": {
           "title": "Specialized Epic",
           "price": 5499.99,
-          "image": { "fields": { "file": { "url": "./images/product-4.jpeg" } } }
+          "image": { "fields": { "file": { "url": "./images/product-4.jpg" } } }
         }
       },
       {
@@ -37,7 +37,7 @@
         "fields": {
           "title": "Specialized Stumpjumper",
           "price": 1849.99,
-          "image": { "fields": { "file": { "url": "./images/product-5.jpeg" } } }
+          "image": { "fields": { "file": { "url": "./images/product-5.jpg" } } }
         }
       },
       {
@@ -45,7 +45,7 @@
         "fields": {
           "title": "Rocky Mountain Element",
           "price": 5499.99,
-          "image": { "fields": { "file": { "url": "./images/product-6.jpeg" } } }
+          "image": { "fields": { "file": { "url": "./images/product-6.jpg" } } }
         }
       },
       {
@@ -53,7 +53,7 @@
         "fields": {
           "title": "Haro Midway",
           "price": 459.99,
-          "image": { "fields": { "file": { "url": "./images/product-7.jpeg" } } }
+          "image": { "fields": { "file": { "url": "./images/product-7.jpg" } } }
         }
       },
       {
@@ -61,7 +61,7 @@
         "fields": {
           "title": "Rocky Mountain Pipeline",
           "price": 2799.99,
-          "image": { "fields": { "file": { "url": "./images/product-8.jpeg" } } }
+          "image": { "fields": { "file": { "url": "./images/product-8.jpg" } } }
         }
       }
     ]
