@@ -52,7 +52,7 @@ class UI {
                   class="product-img"
                 />
                 <button class="bag-btn" data-id=${product.id}>
-                  <i class="fas fa-shopping-cart">add to bag</i>
+                  <i class="fas fa-shopping-cart"></i>add to bag
                 </button>
               </div>
               <h3>${product.title}</h3>
@@ -68,27 +68,29 @@ class UI {
     buttonsDOM = buttons;
     buttons.forEach((button) => {
       let id = button.dataset.id;
+
       let inCart = cart.find((item) => item.id === id);
       if (inCart) {
         button.innerText = "In Cart";
         button.disabled = true;
+      } else {
+        button.addEventListener("click", (event) => {
+          event.target.innerText = "In Cart";
+          event.target.disabled = true;
+          // get product from products
+          let cartItem = { ...Storage.getProduct(id), amount: 1 };
+          // add product to the cart
+          cart = [...cart, cartItem];
+          // save cart into local storage
+          Storage.saveCart(cart);
+          // set cart values
+          this.setCartValues(cart);
+          // display cart item
+          this.addCartItem(cartItem);
+          // show the cart
+          this.showCart();
+        });
       }
-      button.addEventListener("click", (event) => {
-        event.target.innerText = "In Cart";
-        event.target.disabled = true;
-        // get product from products
-        let cartItem = { ...Storage.getProduct(id), amount: 1 };
-        // add product to the cart
-        cart = [...cart, cartItem];
-        // save cart into local storage
-        Storage.saveCart(cart);
-        // set cart values
-        this.setCartValues(cart);
-        // display cart item
-        this.addCartItem(cartItem);
-        // show the cart
-        this.showCart();
-      });
     });
   }
   setCartValues(cart) {
@@ -104,25 +106,27 @@ class UI {
   addCartItem(item) {
     const div = document.createElement("div");
     div.classList.add("cart-item");
-    div.innerHTML = `
-    <img src="${item.image}" alt="procduct">
+    div.innerHTML = `<!-- cart item -->
+    <img src=${item.image} alt="product" />
     <div>
         <h4>${item.title}</h4>
-        <h5>$ ${item.price}</h5>
+        <h5>$${item.price}</h5>
         <span class="remove-item" data-id=${item.id}>remove</span>
     </div>
     <div>
         <i class="fas fa-chevron-up" data-id=${item.id}></i>
         <p class="item-amount">${item.amount}</p>
         <i class="fas fa-chevron-down" data-id=${item.id}></i>
-    </div>`;
+    </div>
+    <!-- cart item -->
+    `;
     cartContent.appendChild(div);
   }
   showCart() {
     cartOverlay.classList.add("transparentBcg");
     cartDOM.classList.add("showCart");
   }
-  setUpAPP() {
+  setupAPP() {
     cart = Storage.getCart();
     this.setCartValues(cart);
     this.populateCart(cart);
@@ -130,7 +134,7 @@ class UI {
     closeCartBtn.addEventListener("click", this.hideCart);
   }
   populateCart(cart) {
-    cart.forEach((item) => this.addCartItem(item));
+    cart.forEach(item => this.addCartItem(item));
   }
   hideCart() {
     cartOverlay.classList.remove("transparentBcg");
@@ -138,7 +142,7 @@ class UI {
   }
 }
 
-// loacl storage
+// local storage
 
 class Storage {
   static saveProducts(products) {
@@ -162,8 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const ui = new UI();
   const products = new Products();
   // setup App
-
-  ui.setUpAPP();
+  ui.setupAPP();
 
   // get all products
   products

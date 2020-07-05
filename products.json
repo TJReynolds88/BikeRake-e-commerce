@@ -1,68 +1,68 @@
 {
-    "items": [
-      {
-        "sys": { "id": "1" },
-        "fields": {
-          "title": "Kona Hei Hei",
-          "price": 1899.99,
-          "image": { "fields": { "file": { "url": "images/product-1.jpg" } } }
-        }
-      },
-      {
-        "sys": { "id": "2" },
-        "fields": {
-          "title": "Kona Big Honzo",
-          "price": 2399.99,
-          "image": { "fields": { "file": { "url": "./images/product-2.jpg" } } }
-        }
-      },
-      {
-        "sys": { "id": "3" },
-        "fields": {
-          "title": "Kona WO",
-          "price": 1499.99,
-          "image": { "fields": { "file": { "url": "./images/product-3.jpg" } } }
-        }
-      },
-      {
-        "sys": { "id": "4" },
-        "fields": {
-          "title": "Specialized Epic",
-          "price": 5499.99,
-          "image": { "fields": { "file": { "url": "./images/product-4.jpg" } } }
-        }
-      },
-      {
-        "sys": { "id": "5" },
-        "fields": {
-          "title": "Specialized Stumpjumper",
-          "price": 1849.99,
-          "image": { "fields": { "file": { "url": "./images/product-5.jpg" } } }
-        }
-      },
-      {
-        "sys": { "id": "6" },
-        "fields": {
-          "title": "Rocky Mountain Element",
-          "price": 5499.99,
-          "image": { "fields": { "file": { "url": "./images/product-6.jpg" } } }
-        }
-      },
-      {
-        "sys": { "id": "7" },
-        "fields": {
-          "title": "Haro Midway",
-          "price": 459.99,
-          "image": { "fields": { "file": { "url": "./images/product-7.jpg" } } }
-        }
-      },
-      {
-        "sys": { "id": "8" },
-        "fields": {
-          "title": "Rocky Mountain Pipeline",
-          "price": 2799.99,
-          "image": { "fields": { "file": { "url": "./images/product-8.jpg" } } }
-        }
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Kona Hei Hei",
+        "price": 1899.99,
+        "image": { "fields": { "file": { "url": "./images/product-1.jpg" } } }
       }
-    ]
-  }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "Kona Big Honzo",
+        "price": 2399.99,
+        "image": { "fields": { "file": { "url": "./images/product-2.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "Kona WO",
+        "price": 1499.99,
+        "image": { "fields": { "file": { "url": "./images/product-3.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "Specialized Epic",
+        "price": 5499.99,
+        "image": { "fields": { "file": { "url": "./images/product-4.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "Specialized Stumpjumper",
+        "price": 1849.99,
+        "image": { "fields": { "file": { "url": "./images/product-5.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "Rocky Mountain Element",
+        "price": 5499.99,
+        "image": { "fields": { "file": { "url": "./images/product-6.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "Haro Midway",
+        "price": 459.99,
+        "image": { "fields": { "file": { "url": "./images/product-7.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "Rocky Mountain Pipeline",
+        "price": 2799.99,
+        "image": { "fields": { "file": { "url": "./images/product-8.jpg" } } }
+      }
+    }
+  ]
+}
